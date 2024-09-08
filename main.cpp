@@ -12,22 +12,23 @@
 
 using namespace std;
 
+// Usage example.
 int main(int argc, const char * argv[]) {
     vector<int> a;
     a.push_back(1);
     a.push_back(1);
     a.push_back(1);
-//    vector<int> b;
-//    b.push_back(1);
-//    b.push_back(1);
-//    b.push_back(1);
+    vector<int> b;
+    b.push_back(1);
+    b.push_back(1);
+    b.push_back(1);
 
     NNumber::TNumber n1(a);
-//    NNumber::TNumber n2(b);
+    NNumber::TNumber n2(b);
 
-//    NUtils::TAlgorithms algs;
-//    bool res = algs.MillerRabin(n1, 15);
-//    cout << res;
+    NUtils::TAlgorithms algs;
+    bool res = algs.MillerRabin(n1, 15);
+    cout << res;
 
     NRSA::TRSA rsa;
     rsa.makeRSA();
